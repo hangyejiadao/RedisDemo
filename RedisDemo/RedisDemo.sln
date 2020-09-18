@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PubSub", "PubSub\PubSub.csproj", "{B2C06EDE-2E5E-4C71-B8B2-063CBDB43C13}"
 EndProject
@@ -10,6 +10,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transaction", "Transaction\Transaction.csproj", "{72EB873E-E867-405F-A3CC-5152B8B1DF17}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lock", "Lock\Lock.csproj", "{26BFD5D1-3736-407F-AB0A-C15CEE34128B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Share", "Share", "{40114CF2-4DC5-4D77-890F-6D8792BBC404}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Redis", "Redis\Redis.csproj", "{A0CC1DCB-DA6B-4325-86A8-31987E5B63FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestKeyLength", "TestKeyLength", "{27ED8FA2-2D3E-421D-8B72-B031F7359838}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisKeyTest", "RedisKeyTest\RedisKeyTest.csproj", "{65588637-A34C-406F-A27C-8E885594A833}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,8 +41,23 @@ Global
 		{26BFD5D1-3736-407F-AB0A-C15CEE34128B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26BFD5D1-3736-407F-AB0A-C15CEE34128B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26BFD5D1-3736-407F-AB0A-C15CEE34128B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0CC1DCB-DA6B-4325-86A8-31987E5B63FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0CC1DCB-DA6B-4325-86A8-31987E5B63FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0CC1DCB-DA6B-4325-86A8-31987E5B63FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0CC1DCB-DA6B-4325-86A8-31987E5B63FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65588637-A34C-406F-A27C-8E885594A833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65588637-A34C-406F-A27C-8E885594A833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65588637-A34C-406F-A27C-8E885594A833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65588637-A34C-406F-A27C-8E885594A833}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A0CC1DCB-DA6B-4325-86A8-31987E5B63FC} = {40114CF2-4DC5-4D77-890F-6D8792BBC404}
+		{65588637-A34C-406F-A27C-8E885594A833} = {27ED8FA2-2D3E-421D-8B72-B031F7359838}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA069DD0-E991-46DB-ADCF-7F48D04E9982}
 	EndGlobalSection
 EndGlobal
